@@ -11,3 +11,15 @@
 .angular-logo{
   height: 100px;
 }
+.androidBtns{
+  display: flex;
+  margin: 1em;
+  gap: 1em;
+}
+@media (max-width: 600px) {
+  .androidBtns{
+    flex-direction: column;
+    width: 12em;
+  }
+  
+}

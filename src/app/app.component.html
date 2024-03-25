@@ -1,8 +1,20 @@
 <div class="left-sidebar">
-  
   <app-greeting></app-greeting>
-  
 </div>
 <div class="left-sidebar">
-  <app-publisher></app-publisher>
+  <!-- <app-publisher></app-publisher> -->
+  <div class="androidBtns">
+    <app-android-buttons
+      label="Scan BarCode"
+      (click)="requestBarcodePermission()"
+    ></app-android-buttons>
+    <app-android-buttons
+      label="Get GeoLocation"
+      (click)="requestLocationPermission()"
+    ></app-android-buttons>
+    <app-android-buttons
+      label="Open Camera"
+      (click)="requestCameraPermission()"
+    ></app-android-buttons>
+  </div>
 </div>
